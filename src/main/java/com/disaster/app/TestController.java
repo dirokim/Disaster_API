@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import javax.net.ssl.HttpsURLConnection;
 import java.io.IOException;
 import java.net.HttpURLConnection;
+import java.net.URI;
+import java.net.URL;
 
 @Controller
 public class TestController {
@@ -18,8 +20,9 @@ public class TestController {
 		HttpURLConnection connection =  (HttpURLConnection)url.openConnection();
 		connection.setRequestMethod("GET");
 		connection.setRequestProperty("Content-type","application/json");
-
-		connection.se
+		System.out.println(connection.getResponseCode());
+		
+	
 
 
 
